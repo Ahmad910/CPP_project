@@ -1,0 +1,14 @@
+
+group* getGroups();
+
+bool deleteGroup(int groupId);
+
+bool createGroup(string name);
+
+article* getArticles(int groupId); //NULL if group doesn't exist
+
+bool createArticle(int groupId, string title, string author, string text);
+
+bool deleteArticle(int articleId);
+
+article* getArticle(int articleId); //NULL if article doesn't exist
